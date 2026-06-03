@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TideLine Boat Works</title>
+  <style>
+    :root {
+      --navy:#071522;
+      --blue:#005ED9;
+      --bright:#00A6FF;
+      --white:#ffffff;
+      --light:#f4f8fb;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Arial, Helvetica, sans-serif; color:#17212b; background:white; }
+    header {
+      min-height:90vh;
+      background:
+        radial-gradient(circle at 25% 20%, rgba(0,166,255,.28), transparent 35%),
+        linear-gradient(135deg, #071522 0%, #0f2740 60%, #030910 100%);
+      color:white;
+      padding:30px 7%;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
+    .brand { letter-spacing:.16em; color:var(--bright); text-transform:uppercase; font-weight:800; }
+    h1 { font-size:clamp(3rem, 8vw, 6rem); line-height:.95; margin:20px 0; }
+    h2 { font-size:clamp(2rem,4vw,3rem); margin:0 0 20px; }
+    p { font-size:1.1rem; line-height:1.7; }
+    .hero-text { max-width:700px; color:#dcecf7; font-size:1.3rem; }
+    .button {
+      display:inline-block; margin-top:25px; padding:15px 26px; border-radius:999px;
+      background:var(--bright); color:var(--navy); text-decoration:none; font-weight:800;
+    }
+    section { padding:80px 7%; }
+    .light { background:var(--light); }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:30px; }
+    .card { background:white; border-top:5px solid var(--bright); border-radius:20px; padding:30px; box-shadow:0 10px 30px rgba(7,21,34,.08); }
+    .card h3 { color:var(--navy); font-size:1.5rem; }
+    .dark { background:var(--navy); color:white; }
+    .checks { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:30px; }
+    .checks div { background:rgba(255,255,255,.08); padding:18px; border-radius:14px; text-align:center; font-weight:700; }
+    .contact-box { background:var(--navy); color:white; padding:35px; border-radius:22px; max-width:650px; }
+    footer { background:#030910; color:#cfe6f7; text-align:center; padding:40px 7%; }
+    @media(max-width:850px){ .cards,.checks{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">TideLine Boat Works</div>
+    <h1>Boat Service, Detailing & Gel Coat Repair</h1>
+    <p class="hero-text">Reliable marine care built to keep your boat looking sharp and ready for the water.</p>
+    <p>Serving the Central Valley, Delta & Lake Tahoe</p>
+    <a class="button" href="#contact">Get a Quote</a>
+  </header>
+
+  <section>
+    <div class="brand">About Us</div>
+    <h2>Keeping you on the water.</h2>
+    <p>At TideLine Boat Works, we help boat owners protect their investment and enjoy more time on the water. From routine service and detailing to gel coat restoration, we bring attention to detail, honest communication, and pride in every job.</p>
+  </section>
+
+  <section class="light">
+    <div class="brand">Services</div>
+    <h2>What We Offer</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Boat Service</h3>
+        <p>Routine maintenance, troubleshooting, inspections, and preventative service.</p>
+      </div>
+      <div class="card">
+        <h3>Detailing</h3>
+        <p>Interior and exterior cleaning, wash, wax, protection, and oxidation removal.</p>
+      </div>
+      <div class="card">
+        <h3>Gel Coat Repair</h3>
+        <p>Scratch repair, chip repair, restoration, polishing, and finish protection.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="brand">Why Choose Us</div>
+    <h2>Built for boat owners who care about the details.</h2>
+    <div class="checks">
+      <div>Honest Communication</div>
+      <div>Attention to Detail</div>
+      <div>Reliable Service</div>
+      <div>Locally Owned</div>
+      <div>Marine Focused</div>
+      <div>Mobile Service Available</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="brand">Contact</div>
+    <h2>Request a Quote</h2>
+    <div class="contact-box">
+      <p><strong>Phone:</strong> (209) 597-6259</p>
+      <p><strong>Email:</strong> Julian@TideLineBoatWorks.com</p>
+      <p><strong>Instagram:</strong> @tidelineboatworks</p>
+      <p><strong>Service Area:</strong> Servicing the Central Valley</p>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>TideLine Boat Works</strong></p>
+    <p>Boat Service • Detailing • Gel Coat Repair</p>
+    <p>© 2026 TideLine Boat Works</p>
+  </footer>
+</body>
+</html>
